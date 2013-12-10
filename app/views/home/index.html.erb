@@ -1,4 +1,75 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    
+<hr class="divider">
+<div class = "text-center"><h1>Our Values</h1></div>
+
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <%= image_tag "circle_1.png", class: "img-circle", alt: "140x140", style: "width: 140px; height: 140px;" %>
+          <h2>Bring The Right Tools</h2>
+          <p>We are always fully up to date on the latest technology needed to help you succeed. </p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details »</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        	<%= image_tag "circle_2.png", class: "img-circle", alt: "140x140", style: "width: 140px; height: 140px;" %>
+          <h2>Leave No Man Behind</h2>
+          <p>We are dedicated to ensuring that our clients have full understanding of what we are doing.</p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details »</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <%= image_tag "circle_3.png", class: "img-circle", alt: "140x140", style: "width: 140px; height: 140px;" %>
+          <h2>Preparation Is Key</h2>
+          <p>We want you to succeed - that's why we insist on setting measurable outcomes.</p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details »</a></p> -->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+<hr class="divider">
+<div class = "text-center"><h1>Our Work</h1></div>
+
+
+
+      <!-- START THE FEATURETTES -->
+
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Precise Medical. <span class="text-muted">Shopify Based Online Shop.</span></h2>
+          <p class="lead">Rahr & Co. did the full setup of the Precise Medical site as  well as additional marketing including email, banner retargeting and targeted blog content creation</p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag "feature_1_precise.png", class: "featurette-image img-responsive", alt: "Precise Medical" %>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+
+      <!-- /END THE FEATURETTES -->
+
+<!-- Contact Form -->
+
+<div class = "container">
+
+<div class = "text-center"><h2>Contact Base Camp</h2></div>
+
+   <form role="form">
+  <div class="form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+ 
+ </div>
+<a class="btn btn-default" href="#" role="button">Submit »</a> 
+</form>
+</div>
+
+<!-- /END Contact Form -->
+

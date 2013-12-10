@@ -8,13 +8,27 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
+  
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
+  
+   <header>
+      <%= render 'layouts/header' %>
     </header>
+  
     <main role="main">
+         <%= render 'home/carousel' %>
+      <div class="container marketing">
        <%= render 'layouts/messages' %>
        <%= yield %>
+     </div>
     </main>
+    <%= render 'layouts/footer' %>  
+    <footer>
+  <% if user_signed_in? %>
+  <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
+  <%= link_to 'Posts', posts_path %>
+  <%= link_to 'Edit account', edit_user_registration_path %>
+  <% end %>
+</footer>
   </body>
 </html>
